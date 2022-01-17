@@ -17,5 +17,6 @@ public interface Budynek {
     void liczbaMieszkancow(int value);
     void kolorDomu(KolorEnum kolor);
     double czynsz(double cena_za_km2, double rachunki);
+    String toString();
 
 }
