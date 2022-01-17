@@ -92,7 +92,7 @@ public class Main {
         Kierownik kierownik1 = new Kierownik("Olga", "Nowicka", 36, 6000, 34, "marketing");
         Kierownik kierownik2 = new Kierownik("Felix", "Tyrski", 41, 5500, 32, "produkcja");
         PracownikI pracownik3 = new Pracownik();
-        List<PracownikI> listaPracownikow = new ArrayList<PracownikI>();
+        List<PracownikI> listaPracownikow = new ArrayList<>();
         listaPracownikow.add(pracownik1);
         listaPracownikow.add(pracownik2);
         listaPracownikow.add(kierownik1);
