@@ -1,4 +1,4 @@
-public class Pracownik implements CzlowiekI{
+public class Pracownik implements CzlowiekI {
     private String imie;
     private String nazwisko;
     private int wiek;

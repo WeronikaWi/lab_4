@@ -1,4 +1,4 @@
-public class Student implements StudentI{
+public class Student implements StudentI {
     private String imie;
     private String nazwisko;
     private int wiek;
