@@ -1,21 +1,22 @@
-public class Pracownik implements PracownikI {
+public class Kierownik implements PracownikI {
     private String imie;
     private String nazwisko;
     private int wiek;
-    private String stanowisko;
+    private String stanowisko = "kierownik";
     private double pensja;
     private int dniUrlopu;
+    private String dzial;
 
-    public Pracownik() {
+    public Kierownik() {
     }
 
-    public Pracownik(String imie, String nazwisko, int wiek, String stanowisko, double pensja, int dniUrlopu) {
+    public Kierownik(String imie, String nazwisko, int wiek, double pensja, int dniUrlopu, String dzial) {
         this.imie = imie;
         this.nazwisko = nazwisko;
         this.wiek = wiek;
-        this.stanowisko = stanowisko;
         this.pensja = pensja;
         this.dniUrlopu = dniUrlopu;
+        this.dzial = dzial;
     }
 
     @Override
@@ -72,15 +73,26 @@ public class Pracownik implements PracownikI {
         this.dniUrlopu = dniUrlopu;
     }
 
+    public String getDzial() {
+        return dzial;
+    }
+
+    public void setDzial(String dzial) {
+        this.dzial = dzial;
+    }
+
     @Override
     public String toString() {
-        return "Pracownik{" +
+        return "Kierownik{" +
                 "imie='" + imie + '\'' +
                 ", nazwisko='" + nazwisko + '\'' +
                 ", wiek=" + wiek +
                 ", stanowisko='" + stanowisko + '\'' +
                 ", pensja=" + pensja +
                 ", dniUrlopu=" + dniUrlopu +
+                ", dział=" + dzial +
                 '}';
     }
 }
+
+

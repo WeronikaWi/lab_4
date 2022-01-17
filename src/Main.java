@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -76,6 +78,31 @@ public class Main {
         System.out.println(student2);
         System.out.println(pracownik1);
         System.out.println(pracownik2);
+
+       /* zad.4 - Dla chętnych
+        a) stworzyć klasę Kierownik która będzie implementować interfejs PracownikI,
+        b) zaimplementować wszystkie metody, i stworzyć pola
+        c) stworzyć 2 objekty typu Kierownik i uzupełnić wszystkie pola,
+                d) stworzyć listę typu PracownikI --> List<PracownikI> listaPracownikow = new ArrayList<>();
+        e) dodać do niej objekty typu Kierownik i Pracownik
+        f) wypisać pętlą metody toString() wszystkich elementów listy
+        */
+        System.out.println("Zadanie dodatkowe: ");
+
+        Kierownik kierownik1 = new Kierownik("Olga", "Nowicka", 36, 6000, 34, "marketing");
+        Kierownik kierownik2 = new Kierownik("Felix", "Tyrski", 41, 5500, 32, "produkcja");
+        PracownikI pracownik3 = new Pracownik();
+        List<PracownikI> listaPracownikow = new ArrayList<PracownikI>();
+        listaPracownikow.add(pracownik1);
+        listaPracownikow.add(pracownik2);
+        listaPracownikow.add(kierownik1);
+        listaPracownikow.add(kierownik2);
+
+        for (PracownikI pracownik : listaPracownikow) {
+            System.out.println(pracownik);
+        }
+
+
     }
 
 
