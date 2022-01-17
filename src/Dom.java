@@ -15,5 +15,18 @@ public class Dom implements Budynek{
     private int liczbaMieszkancow;
     private KolorEnum kolorDomu;
 
+    public Dom(double powierzchnia, String adres, int liczbaOkien, int liczbaMieszkancow, KolorEnum kolorDomu) {
+        this.powierzchnia = powierzchnia;
+        this.adres = adres;
+        this.liczbaOkien = liczbaOkien;
+        this.liczbaMieszkancow = liczbaMieszkancow;
+        this.kolorDomu = kolorDomu;
+    }
+    @Override
+    double powierzchnia(double pow)
+    {
+        this.powierzchnia = pow;
+        return pow;
+    }
 
 }
